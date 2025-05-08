@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f6;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        background-color: #0f1111;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+    .logo img {
+        width: 100px;
+        height: 50px;
+        object-fit: contain;
+        border: 2px solid transparent;
+        transition: border 0.2s;
+    }
+    .logo img:hover {
+        border-color: #ff9900;
+    }
+    .address {
+        color: #fff;
+        background: #232f3e;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border:2px solid transparent ;
+        font-size: 16px;
+    }
+    .address:hover{
+        border-color: #ff9900;
+
+    }
+    .search-bar {
+        display: flex;
+        align-items: center;
+        flex: 2;
+        gap: 2px;
+        max-width: 500px;
+        background: #fff;
+        border-radius: 4px;
+
+    }
+    .search-bar select,
+    .search-bar input {
+        border: none;
+        outline: none;
+        padding: 8px;
+        font-size: 15px;
+    }
+    .search-bar input {
+        flex: 1;
+    }
+    .search-bar select {
+        background: #f3f3f3;
+    }
+    .country-select {
+        margin-left: 10px;
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        font-size: 15px;
+    }
+    /* Second row styles */
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        background: #63094a;
+        padding: 10px 16px;
+    }
+    .nav-links span,
+    .nav-links select {
+        color: #fff;
+        font-size: 15px;
+    
+    }
+    .nav-links select {
+        color: #232f3e;
+        background: #fff;
+        border-radius: 2px;
+        padding: 4px 50px;
+    }
+    .nav-links span:hover,
+    .nav-links select:hover {
+        text-decoration: underline;
+        
+    }
+    .cont {
+
+position: relative;
+width: 220px;
+height: 700px;
+/* display: flex; */
+background-color:rgb(222, 216, 216) ;
+}
+    .oppo{
+        position: absolute;
+        /* width: 300px;
+        height: 800px; */
+        /* background-color: #2c1019; */
+
+    }
+    .oppo1{
+        top: 0px;
+        left: 5px;
+    }
+    .oppo img{
+        width: 200px;
+        height: 300px;
+        padding-top: 10px;
+    
+        margin-bottom: 20px;
+    }
+    .rate {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 2rem;
+  position: relative;
+}
+.rate > input {
+  display: none;
+}
+.radio{
+    position: absolute;
+
+}
+.rate{
+    top: -10px;
+    left: -50px;
+}
+.rate > label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.rate > label:hover,
+.rate > label:hover ~ label {
+  color: #ffc700;
+}
+.price{
+padding: 6px;
+font-weight: 700;
+    background-color:#CC0C39 ;
+}
+.amount{
+    padding: 10px;
+}
+.amount1{
+display: inline-block;
+text-decoration: inherit;
+
+}
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Logo">
+        </div>
+        <div class="address">Address</div>
+        <div class="search-bar">
+            <select>
+                <option>All Categories</option>
+                <option>Books</option>
+                <option>Electronics</option>
+                <option>Fashion</option>
+            </select>
+            <input type="text" placeholder="Search Amazon">
+        </div>
+        <select class="country-select">
+            <option>India</option>
+            <option>America</option>
+            <option>China</option>
+        </select>
+    </div>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <span>All</span>
+        <select>
+            <option>Fresh</option>
+        </select>
+        <span>MxPlayer</span>
+        <span>Sell</span>
+        <span>Bestsellers</span>
+        <span>Today's Deals</span>
+        <span>Mobile</span>
+        <select>
+            <option>Prime</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="cont">
+        <div class="oppo oppo1">
+            <img src="./81T3olLXpUL._AC_UL480_FMwebp_QL65_.webp" alt="">
+       <p> Tecno POP 9 5G Aurora Cloud, 4GB+128GB| Segment's 1st 48MP Sony AI Camera| Segment's 1st 5G with NFC | D6300 5G Processor | 4+ Year Lag Free Fluency |5000 mAh Battery |Dual Speaker |Without Charger</p>
+       <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="5 stars">★</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="4 stars">★</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="3 stars">★</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="2 stars">★</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="1 star">★</label>
+      </div>
+      <span class="price">
+        <span> Limited time deal</span>
+      </span>
+      <div class="amount">
+        <span> $122222</span>
+        <span class= "amount amount1">
+            <span> m.r.p 10000</span>
+        </span>
+      </div>
+    </div>
+
+
+
+      </div>
+    </div>
+
+</body>
+</html>
+
